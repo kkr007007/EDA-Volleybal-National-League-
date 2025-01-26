@@ -9,7 +9,7 @@ To explore age-wise and position-wise trends in player performance.
 To provide insights into team-level contributions and their impact on the league
 
 ### About Dataset
-- Hello everyone!
+ Hello everyone!
 
 I've started collecting and sorting a dataset about volleyball players in the Volleyball National League in 2023.
 
@@ -21,30 +21,30 @@ Here are some information about the Dataset:
 
 Position Feature represents the real position of each player.r
 
-OH: outside hitter
+**OH**: outside hitter
 
-P: Opposite hitter
+**OP**: Opposite hitter
 
-M: Middle blocker
+**M**: Middle blocker
 
-S: Setter
+**S**: Setter
 
-L: Libero
+**L**: Libero
 
-Attack  A player's overall average during each game in the offense factor
+**Attack**:  A player's overall average during each game in the offense factor
 
-Block: A player's overall average during each game in the defense factor.
+**Block**: A player's overall average during each game in the defense factor.
 
-Defense on the net includes direct points, errors, and touching the ball without changing points.
+**Defense**: on the net includes direct points, errors, and touching the ball without changing points.
 
-Serve: Except for the libero player, the rest of the players serve during each turn to start the game. Each player's service average during the match is listed here.
+**Serve**: Except for the libero player, the rest of the players serve during each turn to start the game. Each player's service average during the match is listed here.
 
-Set  The setter is responsible for setting the players. But in special cases, the rest of the players cooperate in this matter, and in the data analysis, we will find out which position the players have the most participation in setting after the setter.
+**Set **: The setter is responsible for setting the players. But in special cases, the rest of the players cooperate in this matter, and in the data analysis, we will find out which position the players have the most participation in setting after the setter.
 
 The set feature represents the average of successful sets, errors, and attempts for each ball during a rally.
-Dg: the average of digs, errors, and reception.ns
+**Dig**: the average of digs, errors, and reception.ns
 
-Receive: Receive feature also represents the average of successful receptions, errors r, rs, and attempts per match.
+**Receive**: Receive feature also represents the average of successful receptions, errors r, rs, and attempts per match.
 
 
 Here is the basic diagram of players on the court
@@ -53,15 +53,57 @@ Here is the basic diagram of players on the court
 ![vnl](https://github.com/user-attachments/assets/2b667a5c-dc49-43ff-8945-f38e6c2a669d)
 
 
+### GitHub README - Volleyball National League Analysis  
+
+---
+
+####  **Getting Started**  
+
+**Prerequisites**  
+- **Python 3.6+**: Download from [python.org](https://www.python.org/downloads/).  
+- **Jupyter Notebook**: Installed via `pip` (see below).  
+
+---
+
+#### 🔧 **Installation**  
+1. **Clone the Repository**:  
+   ```bash  
+   github.com/kkr007007/EDA-Volleybal-National-League-   
+   ```  
+
+2. **Install Required Libraries**:  
+   ```bash  
+   pip install pandas numpy matplotlib seaborn jupyter  
+   ```  
+
+3. **Download Data & Assets**:  
+   - **Dataset**: Download `VNL2023.csv` and place it in the project folder.  
+   - **Image**: Download `vnl.jpg` (used in the pie chart visualization) and save it to the project folder.  
+
+---
+
+####  **Running the Jupyter Notebook**  
+1. **Launch Jupyter Notebook**:  
+   ```bash  
+   jupyter notebook  
+   ```  
+   This will open Jupyter in your browser.  
+
+2. **Open the Notebook**:  
+   - Navigate to `Volleyball_National_League_Analysis.ipynb` and open it.  
+
+3. **Execute Cells**:  
+   - Run each cell sequentially using **Shift + Enter**.  
+   - Ensure the notebook has access to `VNL2023.csv` and `vnl.jpg` (place them in the same directory).  
+
+
+
+Now you’re ready to dive into the analysis! 🏐✨
+
+
 
 ### Key Insights
 
-
-### GitHub README - Volleyball National League Analysis  
-
-#### 📊 **Comprehensive Insights from the Data Analysis**  
-
----
 
 #### **1. Data Overview**  
 - **Total Players**: 131 players from **16 countries** (Japan, Italy, France, Cuba, Bulgaria, etc.).  
@@ -156,12 +198,12 @@ Here is the basic diagram of players on the court
 
 ---
 
-#### 🛠️ **Methodology & Tools**  
+####  **Methodology & Tools**  
 - **Python Libraries**: `pandas` (data wrangling), `numpy` (statistics), `seaborn`/`matplotlib` (visualizations).  
 - **Techniques**: Correlation analysis, grouped aggregations, histograms, heatmaps, and outlier detection.  
 - **Data Source**: `VNL2023.csv` (cleaned, no duplicates or missing values).  
 
 --- 
 
-📈 **Explore the code, visualizations, and interactive plots in the repository for deeper insights!**  
-🔍 **Key Takeaway**: Attackers and servers peak in late 20s, while Liberos and Setters excel in defensive roles regardless of age.
+**Explore the code, visualizations, and interactive plots in the repository for deeper insights!**  
+**Key Takeaway**: Attackers and servers peak in late 20s, while Liberos and Setters excel in defensive roles regardless of age.
